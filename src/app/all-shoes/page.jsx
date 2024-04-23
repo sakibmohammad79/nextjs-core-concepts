@@ -1,30 +1,23 @@
 import Image from "next/image";
 
-export const metadata = {
-  title: "Home Page",
-  description: "This is home page",
-};
 const Page = async () => {
   const res = await fetch("http://localhost:5000/shoes", {
-    next: {
-      revalidate: 15,
-    },
+    cache: "no-store",
   });
   const shoes = await res.json();
-  throw new Error("Error occured in home page!");
+  console.log(shoes);
   return (
     <div>
-      <h2 className="text-center p-5 ">Welcome to NextJs Application!!!</h2>
-
-      <div className="grid grid-cols-3 gap-4 justify-between p-5">
+      <h2 className="text-center font-3xl">All Shoes</h2>
+      <div className="grid grid-cols-3 gap-4 justify-between p-4">
         {shoes.map((shoe) => (
-          <div key={shoe.id} className="card w-80 bg-base-100 shadow-xl">
+          <div key={shoe.id} className="card  bg-base-100 shadow-xl">
             <figure>
               <Image
                 src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                 alt="Shoes"
-                height={500}
-                width={500}
+                height={300}
+                width={300}
               />
             </figure>
             <div className="card-body">
