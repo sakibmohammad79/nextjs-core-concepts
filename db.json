@@ -1,0 +1,40 @@
+{
+  "shoes": [
+    {
+      "title": "Men's Running Shoes",
+      "description": "Comfortable and durable shoes for running enthusiasts.",
+      "price": 79.99,
+      "id": "shoe001"
+    },
+    {
+      "title": "Women's Walking Shoes",
+      "description": "Stylish and lightweight shoes perfect for everyday walks.",
+      "price": 64.99,
+      "id": "shoe002"
+    },
+    {
+      "title": "Unisex Sneakers",
+      "description": "Versatile sneakers suitable for both men and women.",
+      "price": 89.99,
+      "id": "shoe003"
+    },
+    {
+      "title": "Kids' Sports Shoes",
+      "description": "Colorful and fun shoes designed for active kids.",
+      "price": 54.99,
+      "id": "shoe004"
+    },
+    {
+      "title": "Men's Formal Shoes",
+      "description": "Classic and elegant shoes for formal occasions.",
+      "price": 99.99,
+      "id": "shoe005"
+    },
+    {
+      "title": "Women's Sandals",
+      "description": "Comfortable sandals perfect for summer outings.",
+      "price": 39.99,
+      "id": "shoe006"
+    }
+  ]
+}

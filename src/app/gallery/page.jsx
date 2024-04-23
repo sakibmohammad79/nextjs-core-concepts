@@ -1,6 +1,10 @@
 import Image from "next/image";
-import nextImage from "../../assets/istockphoto-539208441-2048x2048.jpg";
-
+// import nextImage from "../../assets/istockphoto-539208441-2048x2048.jpg";
+import nextImage from "@/assets/istockphoto-539208441-2048x2048.jpg";
+export const metadata = {
+  title: "Gallery Page",
+  description: "This is gallery page",
+};
 const Page = () => {
   return (
     <div>
